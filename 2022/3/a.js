@@ -30,7 +30,3 @@ const findDuplicate = (first, second) => {
 const duplicates = inputSplit.map((el) => findDuplicate(el[0], el[1]))
 
 const answer = duplicates.reduce((acc, cur) => acc + itemMap.get(cur), 0)
-
-// console.log(duplicates)
-// console.log(itemMap)
-// console.log(answer)
